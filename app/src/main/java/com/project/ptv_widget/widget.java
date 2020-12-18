@@ -86,11 +86,18 @@ public class widget extends AppWidgetProvider {
                     Instant secondInstant = Instant.now();
                     Duration between = Duration.between(secondInstant, firstInstant);
                     long absoluteResult = between.abs().toMinutes();
-                    String mins = Long.toString(absoluteResult);
+
+                    String mins = "";
+                    if (absoluteResult < 1){
+                         mins = "Now";
+                    }
+                    else{
+                         mins = Long.toString(absoluteResult)  + " mins";
+                    }
                     nexttrams_mins.add(mins);
                 }
 
-                String info = "Spencer/Lonsdale:   " + nexttrams_mins.get(0) + " mins  ||  " + nexttrams_mins.get(1) + " mins";
+                String info = "Spencer/Lonsdale:   " + nexttrams_mins.get(0) + "  ||  " + nexttrams_mins.get(1);
                 views.setTextViewText(R.id.tramData1, info);
                 appWidgetManager.updateAppWidget(appWidgetId, views);
 
@@ -148,11 +155,19 @@ public class widget extends AppWidgetProvider {
                     Instant secondInstant = Instant.now();
                     Duration between = Duration.between(secondInstant, firstInstant);
                     long absoluteResult = between.abs().toMinutes();
-                    String mins = Long.toString(absoluteResult);
+
+                    String mins = "";
+                    if (absoluteResult < 1){
+                        mins = "Now";
+                    }
+                    else{
+                        mins = Long.toString(absoluteResult) + " mins";
+                    }
                     nexttrams_mins.add(mins);
                 }
 
-                String info = "Spencer/LaTrobe:    " + nexttrams_mins.get(0) + " mins  ||  " + nexttrams_mins.get(1) + " mins";
+                String info = "Spencer/LaTrobe:    " + nexttrams_mins.get(0) + "  ||  " + nexttrams_mins.get(1);
+
                 views.setTextViewText(R.id.tramData2, info);
                 appWidgetManager.updateAppWidget(appWidgetId, views);
 

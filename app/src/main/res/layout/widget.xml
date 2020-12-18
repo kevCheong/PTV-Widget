@@ -61,7 +61,8 @@
             android:background = "@drawable/color_change"
             android:textColor="@color/black"
             style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
-            android:textSize="17dp" />
+            android:textSize="15dp"
+            />
 
 
 
