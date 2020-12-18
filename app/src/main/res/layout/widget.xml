@@ -18,45 +18,51 @@
             android:layout_width="match_parent"
             android:layout_height="100dp"
             android:paddingLeft="20dp"
-            android:paddingTop="10dp"
+            android:paddingTop="15dp"
             android:text="Incoming Trams"
             android:textSize="30dp"
             android:textColor = "@color/black"/>
 
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/tramData1"
             android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_height="70dp"
             android:paddingLeft="20dp"
-            android:paddingTop="10dp"
+            android:paddingTop="7dp"
             android:text="INFO: tram 1"
-            android:textSize="20dp"
+            android:autoSizeTextType="uniform"
+            android:autoSizeMinTextSize="12sp"
+            android:autoSizeMaxTextSize="17sp"
+            android:autoSizeStepGranularity="2sp"
             android:textColor = "@color/black"/>/>
 
         <TextView
-            android:id="@+id/textView3"
+            android:id="@+id/tramData2"
             android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_height="50dp"
             android:paddingLeft="20dp"
-            android:paddingTop="10dp"
+            android:paddingTop="7dp"
             android:text="INFO: tram 2"
-            android:textSize="20dp"
+            android:autoSizeTextType="uniform"
+            android:autoSizeMinTextSize="12sp"
+            android:autoSizeMaxTextSize="17sp"
+            android:autoSizeStepGranularity="2sp"
             android:textColor = "@color/black"/>/>
 
         <Button
             android:id="@+id/button"
             android:layout_width="131dp"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
+            android:layout_marginLeft="15dp"
             android:layout_marginTop="20dp"
-            android:background="@drawable/buttonshape"
-            android:shadowColor="#141414"
-            android:shadowDx="0"
-            android:shadowDy="0"
-            android:shadowRadius="5"
+            android:shadowColor="#FFFFFF"
+            android:shadowRadius="1"
             android:text="Refresh"
-            android:textColor="#FFFFFF"
-            android:textSize="15dp" />
+            android:background = "@drawable/color_change"
+            android:textColor="@color/black"
+            style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+            android:textSize="17dp" />
+
 
 
     </LinearLayout>
